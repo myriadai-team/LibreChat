@@ -133,7 +133,7 @@ const Nav = ({
       <div
         data-testid="nav"
         className={
-          'nav active max-w-[320px] flex-shrink-0 overflow-x-hidden bg-surface-primary-alt md:max-w-[260px]'
+          'nav active max-w-[320px] flex-shrink-0 overflow-x-hidden bg-surface-primary-alt md:max-w-[260px] rtl'
         }
         style={{
           width: navVisible ? navWidth : '0px',
@@ -157,7 +157,7 @@ const Nav = ({
                 <nav
                   id="chat-history-nav"
                   aria-label={localize('com_ui_chat_history')}
-                  className="flex h-full w-full flex-col px-3 pb-3.5"
+                  className="flex h-full w-full flex-col px-3 pb-3.5 rtl"
                 >
                   <div
                     className={cn(
@@ -206,7 +206,8 @@ const Nav = ({
         setIsHovering={setIsToggleHovering}
         onToggle={toggleNavVisible}
         navVisible={navVisible}
-        className="fixed left-0 top-1/2 z-40 hidden md:flex"
+        side="right"
+        className="fixed right-0 top-1/2 z-40 hidden md:flex"
       />
       <div
         role="button"

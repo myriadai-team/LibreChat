@@ -7,7 +7,7 @@ export default function NavToggle({
   navVisible,
   isHovering,
   setIsHovering,
-  side = 'left',
+  side = 'right',
   className = '',
   translateX = true,
 }) {
@@ -18,8 +18,8 @@ export default function NavToggle({
 
   const rotationDegree = 15;
   const rotation = isHovering || !navVisible ? `${rotationDegree}deg` : '0deg';
-  const topBarRotation = side === 'right' ? `-${rotation}` : rotation;
-  const bottomBarRotation = side === 'right' ? rotation : `-${rotation}`;
+  const topBarRotation = side === 'left' ? `-${rotation}` : rotation;
+  const bottomBarRotation = side === 'left' ? rotation : `-${rotation}`;
 
   return (
     <div
@@ -27,14 +27,14 @@ export default function NavToggle({
         className,
         '-translate-y-1/2 transition-transform',
         navVisible ? 'rotate-0' : 'rotate-180',
-        navVisible && translateX ? 'translate-x-[260px]' : 'translate-x-0 ',
+        navVisible && translateX ? 'translate-x-[-260px]' : 'translate-x-0',
       )}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
       <TooltipAnchor
-        side={side === 'right' ? 'left' : 'right'}
-        aria-label={`toggle-${side === 'left' ? 'chat-history' : 'controls'}-nav`}
+        side={side === 'left' ? 'right' : 'left'}
+        aria-label={`toggle-${side === 'right' ? 'chat-history' : 'controls'}-nav`}
         id={`toggle-${side}-nav`}
         onClick={onToggle}
         role="button"

@@ -180,7 +180,7 @@ export default function Conversation({
           {isActiveConvo ? (
             <div className="absolute bottom-0 right-0 top-0 w-20 rounded-r-lg bg-gradient-to-l" />
           ) : (
-            <div className="absolute bottom-0 right-0 top-0 w-20 rounded-r-lg bg-gradient-to-l from-gray-50 from-0% to-transparent group-hover:from-gray-200 group-hover:from-40% dark:from-gray-850 dark:group-hover:from-gray-700" />
+            <div className="absolute bottom-0 left-0 top-0 w-20 rounded-r-lg bg-gradient-to-r from-gray-50 from-0% to-transparent group-hover:from-gray-200 group-hover:from-40% dark:from-gray-850 dark:group-hover:from-gray-700" />
           )}
         </a>
       )}

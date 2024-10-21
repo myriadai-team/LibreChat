@@ -51,7 +51,8 @@ const ChatForm = ({ index = 0 }) => {
   );
 
   const chatDirection = useRecoilValue(store.chatDirection).toLowerCase();
-  const isRTL = chatDirection === 'rtl';
+  // const isRTL = chatDirection === 'rtl';
+  const isRTL = false
 
   const { requiresKey } = useRequiresKey();
   const handleKeyUp = useHandleKeyUp({
