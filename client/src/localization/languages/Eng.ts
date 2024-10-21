@@ -831,6 +831,7 @@ export default {
   com_nav_lang_vietnamese: 'Tiếng Việt',
   com_nav_lang_traditionalchinese: '繁體中文',
   com_nav_lang_arabic: 'العربية',
+  com_nav_lang_persian: 'فارسی',
   com_nav_lang_turkish: 'Türkçe',
   com_nav_lang_dutch: 'Nederlands',
   com_nav_lang_indonesia: 'Indonesia',

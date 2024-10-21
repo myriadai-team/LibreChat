@@ -18,6 +18,7 @@ import Dutch from './languages/Nl';
 import Indonesia from './languages/Id';
 import Hebrew from './languages/He';
 import Finnish from './languages/Fi';
+import Persian from './languages/Pr';
 
 // === import additional language files here === //
 
@@ -44,6 +45,7 @@ const languageMap: Record<string, Language> = {
   'id-ID': Indonesia,
   'he-HE': Hebrew,
   'fi-FI': Finnish,
+  'pr-IR': Persian,
   // Add additional language mappings here
 };
 

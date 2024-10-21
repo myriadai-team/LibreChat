@@ -70,6 +70,7 @@ export const LangSelector = ({
     { value: 'id-ID', label: localize('com_nav_lang_indonesia') },
     { value: 'he-HE', label: localize('com_nav_lang_hebrew') },
     { value: 'fi-FI', label: localize('com_nav_lang_finnish') },
+    { value: 'pr-IR', label: localize('com_nav_lang_persian') },
   ];
 
   return (
