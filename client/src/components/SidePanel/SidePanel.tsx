@@ -219,8 +219,8 @@ const SidePanel = ({
             className={cn(
               'fixed top-1/2',
               (isCollapsed && (minSize === 0 || collapsedSize === 0)) || fullCollapse
-                ? 'mr-9'
-                : 'mr-16',
+                ? 'ml-12'
+                : 'ml-16',
             )}
             translateX={false}
             side="right"
